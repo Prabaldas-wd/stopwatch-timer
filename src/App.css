@@ -1,44 +1,55 @@
+body {
+  background-color: rgb(205, 202, 202);
+}
 .App {
+  font-family: sans-serif;
   text-align: center;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.timer-parent {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  width: 600px;
 }
 
-.stopwatch {
-  width: 500px;
-  height: auto;
-  padding: 16px;
-}
-
-.time {
-  font-size: 32px;
-  font-weight: bold;
-  color: rgb(80, 80, 229);
-}
-
-.buttons {
-  margin: 16px;
-}
-
-.buttons>button {
-  width: 100px;
-  padding: 8px;
-  font-size: 20px;
-  margin: 4px;
-  border:none;
-  border-radius: 5px;
-  color: white;
+.buttons__parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 48px;
 }
 
 .start {
-  background-color: rgb(80, 80, 235);
-  
+  width: 50px;
+  height: 50px;
 }
 
 .reset {
-  background-color: rgb(139, 138, 138);
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.playIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.resetIcon {
+  width:60%;
+  height: 60%;
+  object-fit: contain;
+}
