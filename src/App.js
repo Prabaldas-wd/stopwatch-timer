@@ -25,13 +25,10 @@ export default function App() {
       <div className="timer-parent">
         <AnalogClock
           isRunning={isRunning}
-          setIsRunning={setIsRunning}
           elapsedTime={elapsedTime}
           setElapsedTime={setElapsedTime}
           startTimeref={startTimeref}
           intervalIdRef={intervalIdRef}
-          handleStart={handleStart}
-          handleReset={handleReset}
         />
 
         <div className="buttons__parent">

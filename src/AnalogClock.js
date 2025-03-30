@@ -3,13 +3,10 @@ import "./AnalogClock.css";
 
 const AnalogClock = ({
   isRunning,
-  setIsRunning,
   elapsedTime,
   setElapsedTime,
   startTimeref,
-  intervalIdRef,
-  handleStart,
-  handleReset,
+  intervalIdRef
 }) => {
   useEffect(() => {
     if (!isRunning) return;
