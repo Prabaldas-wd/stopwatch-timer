@@ -29,18 +29,16 @@ const AnalogClock = ({
       .toString()
       .padStart(2, "0");
 
-      return (
-        <>
-          <span className="minutes">{minutes}</span>
-          <span className="colon">:</span>
-          <span className="seconds active">{seconds}</span>
-          <span className="colon active" >:</span>
-          <span className="milliseconds active">{miliseconds}</span>
-        </>
-      );
-
+    return (
+      <>
+        <span className="minutes">{minutes}</span>
+        <span className="colon">:</span>
+        <span className="seconds active">{seconds}</span>
+        <span className="colon active">:</span>
+        <span className="milliseconds active">{miliseconds}</span>
+      </>
+    );
   };
-
 
   const seconds = Math.floor((elapsedTime / 1000) % 60);
   const secondDegrees = (seconds / 60) * 360;
@@ -48,13 +46,23 @@ const AnalogClock = ({
   return (
     <div className="clock">
       <div className="clock-face">
-        {[...Array(12)].map((_, i) => {
-          const number = (i) * 5;
+        {[...Array(60)].map((_, i) => {
           const isFiveSecondMark = i % 5 === 0;
           return (
             <div
-              key={i}
-              className={`number second-marker ${isFiveSecondMark ? 'five-second' : ''}`}
+              key={`marker-${i}`}
+              className={`second-marker ${isFiveSecondMark ? 'five-second-marker' : ''}`}
+              style={{ transform: `rotate(${i * 6}deg)` }}
+            />
+          );
+        })}
+        
+        {[...Array(12)].map((_, i) => {
+          const number = (i) * 5;
+          return (
+            <div
+              key={`number-${i}`}
+              className="number"
               style={{ transform: `rotate(${i * 30}deg)` }}
             >
               <span style={{ transform: `rotate(${-i * 30}deg)` }}>

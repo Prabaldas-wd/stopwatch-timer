@@ -27,9 +27,25 @@
 .number span {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  left: 50%;
+  top: 14px;
+  left: 47%;
   transform: translateX(-50%);
+}
+
+.second-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  margin-left: -1px;
+  background-color: #999;
+  transform-origin: 50% 150px;
+}
+
+.five-second-marker {
+  height: 15px;
+  background-color: #666;
 }
 
 .second-hand {
