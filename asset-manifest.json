@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/stopwatch-timer/static/css/main.42051d3d.css",
-    "main.js": "/stopwatch-timer/static/js/main.5bf2813c.js",
+    "main.css": "/stopwatch-timer/static/css/main.a79402f7.css",
+    "main.js": "/stopwatch-timer/static/js/main.90b24aca.js",
     "static/media/play.png": "/stopwatch-timer/static/media/play.28c7ca7b35dc8bee2277.png",
     "static/media/pause.png": "/stopwatch-timer/static/media/pause.cffb50eb679af63f9e8e.png",
     "static/media/reset.png": "/stopwatch-timer/static/media/reset.82632189f4cbd1644b7a.png",
     "index.html": "/stopwatch-timer/index.html",
-    "main.42051d3d.css.map": "/stopwatch-timer/static/css/main.42051d3d.css.map",
-    "main.5bf2813c.js.map": "/stopwatch-timer/static/js/main.5bf2813c.js.map"
+    "main.a79402f7.css.map": "/stopwatch-timer/static/css/main.a79402f7.css.map",
+    "main.90b24aca.js.map": "/stopwatch-timer/static/js/main.90b24aca.js.map"
   },
   "entrypoints": [
-    "static/css/main.42051d3d.css",
-    "static/js/main.5bf2813c.js"
+    "static/css/main.a79402f7.css",
+    "static/js/main.90b24aca.js"
   ]
 }
